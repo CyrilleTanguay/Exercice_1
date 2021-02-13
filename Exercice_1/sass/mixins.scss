@@ -1,0 +1,23 @@
+// @mixin desktop {
+//     @media  (min-width:1000px) {
+//         @content
+//     }
+// }
+
+@mixin phone {
+    grid-template-areas:
+        "en-tete"
+        "leMenu"
+        "section"
+        "annonce"
+        "pied";
+    grid-template-rows: 1fr 0.5fr 2fr 2fr 1fr;
+
+    grid-template-columns: 1fr;
+}
+
+@media (max-width:414px) {
+    body {
+        @include phone();
+    }
+}

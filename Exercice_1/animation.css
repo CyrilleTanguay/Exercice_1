@@ -1,0 +1,73 @@
+header {
+  transform: translateX(-100%);
+  animation: laPage 5s forwards;
+}
+
+@keyframes laPage {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes anim-1 {
+  0% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes anim-2 {
+  0% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes anim-3 {
+  0% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes anim-4 {
+  0% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes anim-5 {
+  0% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.clip-anim {
+  animation: plan 2s forwards;
+  transform: clip-path(polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%));
+}
+
+@keyframes plan {
+  0% {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+  }
+  100% {
+    clip-path: polygon(100% 50%, 0% 100%, 100% 0%, 50% 100%);
+  }
+}
+/*# sourceMappingURL=animation.css.map */

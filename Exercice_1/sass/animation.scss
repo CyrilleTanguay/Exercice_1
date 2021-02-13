@@ -1,0 +1,109 @@
+header {
+    transform: translateX(-100%);
+    animation: laPage 5s forwards;
+}
+
+@keyframes laPage {
+
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+// .animation div:nth-of-type(1){
+//     animation-delay: 1s;
+// }
+// .animation div:nth-of-type(2){
+//     animation-delay: 1.5s;
+// }
+// .animation div:nth-of-type(3){
+//     animation-delay: 2s;
+// }
+// .animation div:nth-of-type(4){
+//     animation-delay: 2.5s;
+// }
+// .animation div:nth-of-type(5){
+//     animation-delay: 3s;
+// }
+
+// .global h3:nth-of-type(1){
+//     animation: anim-1 1s both .5;
+// }.global h3:nth-of-type(2){
+//     animation: anim-2 1s both 1;
+// }.global h3:nth-of-type(3){
+//     animation: anim-3 1s both 1.5;
+// }.global h3:nth-of-type(4){
+//     animation: anim-4 1s both 2;
+// }.global h3:nth-of-type(5){
+//     animation: anim-5 1s both 2.5;
+// }
+@keyframes anim-1 {
+    0% {
+        transform: translateX(-2000px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+@keyframes anim-2 {
+    0% {
+        transform: translateX(-2000px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+@keyframes anim-3 {
+    0% {
+        transform: translateX(-2000px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+@keyframes anim-4 {
+    0% {
+        transform: translateX(-2000px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+@keyframes anim-5 {
+    0% {
+        transform: translateX(-2000px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+.clip-anim {
+    animation: plan 2s forwards;
+    transform: clip-path(polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%));
+}
+
+@keyframes plan {
+    0% {
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+
+    100% {
+        clip-path: polygon(100% 50%, 0% 100%, 100% 0%, 50% 100%);
+    }
+}

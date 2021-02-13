@@ -1,0 +1,8 @@
+@media (max-width: 414px) {
+  body {
+    grid-template-areas: "en-tete" "leMenu" "section" "annonce" "pied";
+    grid-template-rows: 1fr 0.5fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=mixins.css.map */

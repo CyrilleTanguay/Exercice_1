@@ -1,0 +1,97 @@
+body {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "en-tete en-tete" "leMenu leMenu" "section annonce" "pied pied";
+  width: 98%;
+  height: 100%;
+  background-color: gold;
+  margin: auto auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+header,
+menu,
+footer {
+  display: flex;
+  border: 3px black solid;
+  justify-content: center;
+}
+
+.annonce {
+  border: 1px black solid;
+}
+
+.global {
+  border: 1px black solid;
+  justify-content: center;
+}
+
+header {
+  grid-area: en-tete;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  align-items: center;
+}
+
+menu {
+  text-align: right;
+  grid-area: leMenu;
+  justify-content: space-around;
+  padding: 0;
+  align-items: center;
+  background-color: turquoise;
+}
+
+menu div {
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 19.5167px;
+  height: 19.5167px;
+  text-align: center;
+  background-color: gold;
+}
+
+section .global {
+  grid-area: section;
+}
+
+section .annonce {
+  grid-area: annonce;
+}
+
+footer {
+  grid-area: pied;
+  box-shadow: 1px 1px 1px 1px;
+}
+
+.clip-anim::after {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.clip-anim {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: -1;
+  clip-path: polygon(100% 50%, 0% 100%, 100% 0%, 50% 100%);
+}
+
+section {
+  border-radius: 10%;
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=layout.css.map */
